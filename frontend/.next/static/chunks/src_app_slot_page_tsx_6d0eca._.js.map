@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/dev/slot-game/frontend/src/app/slot/page.tsx"],"sourcesContent":["'use client'\r\n// import withAuth from '../hoc/withAuth'\r\n\r\nconst SlotPage = () => {\r\n    console.log('salam')\r\n    return <div>Welcome to the Game Page!</div>\r\n}\r\n\r\nexport default SlotPage\r\n"],"names":[],"mappings":";;;;AAAA;;AACA,yCAAyC;AAEzC,MAAM,WAAW;IACb,QAAQ,GAAG,CAAC;IACZ,qBAAO,6LAAC;kBAAI;;;;;;AAChB;KAHM;uCAKS"}},
+    {"offset": {"line": 31, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

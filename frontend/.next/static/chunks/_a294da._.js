@@ -13,7 +13,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-"use client";
+'use client';
 ;
 const BalanceContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"])({
     balance: 100,
@@ -23,6 +23,7 @@ const BalanceProvider = ({ children })=>{
     _s();
     const [balance, setBalance] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(100);
     const updateBalance = (newBalance)=>{
+        console.log(newBalance);
         setBalance(newBalance);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(BalanceContext.Provider, {
@@ -33,8 +34,8 @@ const BalanceProvider = ({ children })=>{
         children: children
     }, void 0, false, {
         fileName: "[project]/src/app/context/BalanceContext.tsx",
-        lineNumber: 22,
-        columnNumber: 11
+        lineNumber: 23,
+        columnNumber: 9
     }, this);
 };
 _s(BalanceProvider, "ZlozUsO2EERKCzgRJklE74MJLn0=");
@@ -58,7 +59,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$context$2f$BalanceContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/context/BalanceContext.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-"use client";
+'use client';
 ;
 ;
 const Header = ()=>{
@@ -73,7 +74,7 @@ const Header = ()=>{
             }, void 0, false, {
                 fileName: "[project]/src/app/components/Header.tsx",
                 lineNumber: 10,
-                columnNumber: 10
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 children: [
@@ -83,13 +84,13 @@ const Header = ()=>{
             }, void 0, true, {
                 fileName: "[project]/src/app/components/Header.tsx",
                 lineNumber: 11,
-                columnNumber: 16
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/Header.tsx",
         lineNumber: 9,
-        columnNumber: 11
+        columnNumber: 9
     }, this);
 };
 _s(Header, "NAUuMW2XzqB7UCvUe3nDGg0WCeM=");
@@ -111,16 +112,36 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 ;
-const Spinner = ({ symbol })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "w-16 h-16 flex items-center justify-center text-2xl bg-gray-200 rounded-md",
-        children: symbol
-    }, void 0, false, {
+const Spinner = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-center justify-center space-x-1",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-2 h-2 bg-white rounded-full animate-bounce"
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/Spinner.tsx",
+                lineNumber: 3,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-2 h-2 bg-white rounded-full animate-bounce delay-200"
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/Spinner.tsx",
+                lineNumber: 4,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-2 h-2 bg-white rounded-full animate-bounce delay-400"
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/Spinner.tsx",
+                lineNumber: 5,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/src/app/components/Spinner.tsx",
-        lineNumber: 3,
-        columnNumber: 4
+        lineNumber: 2,
+        columnNumber: 5
     }, this);
-};
 _c = Spinner;
 const __TURBOPACK__default__export__ = Spinner;
 var _c;
@@ -143,72 +164,170 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$context$2f$Bal
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Spinner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/components/Spinner.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_refresh__.signature();
-"use client";
+'use client';
 ;
 ;
 ;
 const GameBoard = ()=>{
     _s();
     const { balance, updateBalance } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$context$2f$BalanceContext$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["BalanceContext"]);
+    const [bet, setBet] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(10);
     const [reels, setReels] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
-        '🍒',
-        '🍒',
-        '🍒'
+        [
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒'
+        ],
+        [
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒'
+        ],
+        [
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒',
+            '🍒'
+        ]
     ]);
     const [result, setResult] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isSpinning, setIsSpinning] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false) // Disable spin button while spinning
+    ;
+    const columns = 3 // Number of columns (reels)
+    ;
+    const rows = 5 // Number of rows
+    ;
     const spinReels = async ()=>{
-        const response = await fetch('http://localhost:3001/api/game/spin');
-        const data = await response.json();
-        setReels(data.reels);
-        if (data.isWin) {
-            updateBalance(balance + data.payout);
-            setResult('You win!');
-        } else {
-            setResult('You lose!');
+        if (bet > balance) {
+            setResult('Insufficient balance!');
+            return;
         }
+        setIsSpinning(true) // Disable spin button
+        ;
+        setResult(null) // Clear result
+        ;
+        // Simulate spinning animation before fetching the result
+        setReels(Array.from({
+            length: columns
+        }, ()=>Array.from({
+                length: rows
+            }, ()=>'💫') // Temporary spinning symbol
+        ));
+        // Add a timeout to simulate spinning duration
+        setTimeout(async ()=>{
+            const response = await fetch('http://localhost:3001/api/game/spin', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    bet,
+                    balance
+                })
+            });
+            const data = await response.json();
+            setReels(data.reels) // Update with actual results
+            ;
+            updateBalance(data.newBalance);
+            setResult(data.isWin ? `You win $${data.payout}!` : 'You lose!');
+            setIsSpinning(false) // Re-enable spin button
+            ;
+        }, 2000) // Adjust spinning duration (2 seconds)
+        ;
     };
+    console.log(reels);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "text-center",
+        className: "flex flex-col items-center justify-center min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex justify-center space-x-4 mb-4",
-                children: reels.map((symbol, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Spinner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        symbol: symbol
-                    }, idx, false, {
-                        fileName: "[project]/src/app/components/GameBoard.tsx",
-                        lineNumber: 27,
-                        columnNumber: 26
-                    }, this))
+                className: "grid grid-rows-3 grid-cols-5 gap-1 justify-center items-center p-4 rounded-lg shadow-md",
+                children: reels.map((row, rowIndex)=>row.map((symbol, colIndex)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "w-16 h-16 flex items-center justify-center text-2xl bg-gray-200 rounded-md border",
+                            children: symbol
+                        }, `${rowIndex}-${colIndex}`, false, {
+                            fileName: "[project]/src/app/components/GameBoard.tsx",
+                            lineNumber: 62,
+                            columnNumber: 25
+                        }, this)))
             }, void 0, false, {
                 fileName: "[project]/src/app/components/GameBoard.tsx",
-                lineNumber: 25,
-                columnNumber: 21
+                lineNumber: 59,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mb-4 mt-6",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                        type: "number",
+                        value: bet,
+                        onChange: (e)=>setBet(Number(e.target.value)),
+                        min: "1",
+                        max: balance,
+                        className: "border rounded-md px-2 py-1"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/GameBoard.tsx",
+                        lineNumber: 74,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: " Bet"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/GameBoard.tsx",
+                        lineNumber: 82,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/GameBoard.tsx",
+                lineNumber: 73,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                 onClick: spinReels,
-                className: "px-4 py-2 bg-green-500 text-white rounded-md",
-                children: "Spin"
+                disabled: isSpinning,
+                className: `px-4 py-2 rounded-md ${isSpinning ? 'bg-gray-400 text-gray-700' : 'bg-green-500 text-white'}`,
+                children: isSpinning ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Spinner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/src/app/components/GameBoard.tsx",
+                    lineNumber: 95,
+                    columnNumber: 31
+                }, this) : 'Spin'
             }, void 0, false, {
                 fileName: "[project]/src/app/components/GameBoard.tsx",
-                lineNumber: 30,
-                columnNumber: 25
+                lineNumber: 86,
+                columnNumber: 13
             }, this),
             result && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "mt-4 text-lg",
                 children: result
             }, void 0, false, {
                 fileName: "[project]/src/app/components/GameBoard.tsx",
-                lineNumber: 36,
-                columnNumber: 43
+                lineNumber: 99,
+                columnNumber: 24
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: "mt-2",
+                children: [
+                    "Balance: $",
+                    balance
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/GameBoard.tsx",
+                lineNumber: 100,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/components/GameBoard.tsx",
-        lineNumber: 24,
-        columnNumber: 22
+        lineNumber: 57,
+        columnNumber: 9
     }, this);
 };
-_s(GameBoard, "W3c+k71Li4g5rR2ik7KX1TpNrUM=");
+_s(GameBoard, "oqbcrDSDHxT/qx/EG3Bs5J3Ynyo=");
 _c = GameBoard;
 const __TURBOPACK__default__export__ = GameBoard;
 var _c;

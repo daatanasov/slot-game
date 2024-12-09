@@ -1,10 +1,9 @@
-const Spinner = ({ symbol }: { symbol: string }) => {
-	return (
-	  <div className="w-16 h-16 flex items-center justify-center text-2xl bg-gray-200 rounded-md">
-		{symbol}
-	  </div>
-	);
-  };
-  
-  export default Spinner;
-  
+const Spinner = () => (
+    <div className="flex items-center justify-center space-x-1">
+        <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+        <div className="w-2 h-2 bg-white rounded-full animate-bounce delay-200"></div>
+        <div className="w-2 h-2 bg-white rounded-full animate-bounce delay-400"></div>
+    </div>
+)
+
+export default Spinner

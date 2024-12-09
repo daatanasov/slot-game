@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://D%3A/dev/slot-game/frontend/src/app/page.tsx"],"sourcesContent":["import Link from 'next/link'\r\n\r\nexport default function Home() {\r\n    return (\r\n        <div className=\"flex flex-col items-center justify-center min-h-screen\">\r\n            <h1 className=\"text-4xl font-bold\">Welcome to Slot Game</h1>\r\n            <Link href=\"/game\">\r\n                <button className=\"mt-4 px-4 py-2 bg-blue-500 text-white rounded-md\">\r\n                    Play Now\r\n                </button>\r\n            </Link>\r\n        </div>\r\n    )\r\n}\r\n"],"names":[],"mappings":";;;;AAAgB;;;AAED,SAAS;IACpB,qBACI,QAAC;QAAI,WAAU;;0BACX,QAAC;gBAAG,WAAU;0BAAqB;;;;;;0BACnC,QAAC;gBAAK,MAAK;0BACP,cAAA,QAAC;oBAAO,WAAU;8BAAmD;;;;;;;;;;;;;;;;;AAMrF"}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

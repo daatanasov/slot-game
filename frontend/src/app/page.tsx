@@ -1,14 +1,51 @@
-import Link from 'next/link';
+'use client'
+import React from 'react'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { useAuth } from './context/AuthContext'
+import Dashboard from './dashboard/page'
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-4xl font-bold">Welcome to Slot Game</h1>
-      <Link href="/game">
-        <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">
-          Play Now
-        </button>
-      </Link>
-    </div>
-  );
+    const { user } = useAuth()
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
+            {user ? (
+                <>
+                    <Dashboard />
+                </>
+            ) : (
+                <>
+                    <main className="container mx-auto px-4 py-16">
+                        <section className="text-center">
+                            <h1 className="text-5xl font-extrabold mb-6">
+                                Welcome to Casidincho
+                            </h1>
+                            <p className="text-xl mb-12">
+                                Experience the thrill of online gaming
+                            </p>
+
+                            <div className="grid md:grid-cols-3 gap-8">
+                                {['Slots', 'Roulette', 'Blackjack'].map(
+                                    (game) => (
+                                        <Card
+                                            key={game}
+                                            className="bg-white/10 backdrop-blur-lg"
+                                        >
+                                            <CardHeader>
+                                                <CardTitle>{game}</CardTitle>
+                                            </CardHeader>
+                                            <CardContent className="flex justify-center items-center">
+                                                <div className="w-64 h-48 bg-gray-700 rounded-lg flex items-center justify-center">
+                                                    {game} Preview
+                                                </div>
+                                            </CardContent>
+                                        </Card>
+                                    )
+                                )}
+                            </div>
+                        </section>
+                    </main>
+                </>
+            )}
+        </div>
+    )
 }

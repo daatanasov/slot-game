@@ -1,9 +1,9 @@
-import { Router } from 'express';
-import { spinGame } from '../controllers/gameController';
+import { Router } from 'express'
+import { spinGame } from '../controllers/gameController'
 
-const router = Router();
+const router = Router()
 
-// Define routes
-router.get('/spin', spinGame);
+// Use the spinGame handler
+router.post('/spin', spinGame)
 
-export default router;
+export default router
