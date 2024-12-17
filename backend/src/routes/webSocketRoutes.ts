@@ -13,7 +13,6 @@ export class WebSocketRoutes {
             socket.on('join-slot-game', (userData) =>
                 this.slotGameController.handleJoinGame(socket, userData)
             )
-            console.log('webSocketRoutes')
             socket.on('spin', (betAmount, balance, spinCount) =>
                 this.slotGameController.handleSpin(
                     socket,

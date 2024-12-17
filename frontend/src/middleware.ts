@@ -30,7 +30,7 @@ export const config = {
         '/login',
         '/register',
         '/dashboard/:path*',
-        '/slot-game',
+        // '/slot-game',
         '/blackjack',
     ],
 }

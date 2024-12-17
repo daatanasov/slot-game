@@ -16,10 +16,6 @@
     "originalSource": "/dashboard/:path*"
   },
   {
-    "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/slot-game(\\\\.json)?[\\/#\\?]?$",
-    "originalSource": "/slot-game"
-  },
-  {
     "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/blackjack(\\\\.json)?[\\/#\\?]?$",
     "originalSource": "/blackjack"
   }

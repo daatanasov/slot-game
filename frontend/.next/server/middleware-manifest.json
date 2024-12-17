@@ -27,10 +27,6 @@
           "originalSource": "/dashboard/:path*"
         },
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/slot-game(\\\\.json)?[\\/#\\?]?$",
-          "originalSource": "/slot-game"
-        },
-        {
           "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/blackjack(\\\\.json)?[\\/#\\?]?$",
           "originalSource": "/blackjack"
         }
@@ -65,9 +61,9 @@
       "env": {
         "__NEXT_BUILD_ID": "development",
         "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "TgLHSWluLfQBv4ePuqHVX4RYDCF7s8+8USGSVCVyhUg=",
-        "__NEXT_PREVIEW_MODE_ID": "371f463ba0b43be1b84f22f6ab00e0c6",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3d1bf48aeb109db26033a568d5ecf0553f4f8835b94f8bbcd249a32ca4a3d38c",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "6765ae089bd33ff4217a2ba63a5f3fab6173f3c8118ee46b527b56f59e0b9095"
+        "__NEXT_PREVIEW_MODE_ID": "d91adc48af2266e8734748f4dbb3ab75",
+        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "cd6b0542f279720666f46f526313bf95f8eee1a35ac0b154a01dadc749d43bb0",
+        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "9f9df2e3665177437990d5fad7d43aabb139cb880d4bacab0c9161ce159eadd1"
       }
     }
   },

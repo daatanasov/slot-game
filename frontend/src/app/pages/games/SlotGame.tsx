@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button'
 import { useSocket } from '../../custom-hooks/useSocket'
 import SlotIcon from '@/app/components/SlotIcon'
 import WinOverlay from '@/app/components/WinOverlay'
+import ReelsRenderer from '@/app/components/ReelsRenderer'
 
 const SlotGame = () => {
     const userId = 'user_123'
@@ -80,7 +81,8 @@ const SlotGame = () => {
                     </div>
                     <CardContent className="p-4 sm:p-6">
                         <div className="grid grid-cols-5 gap-1 sm:gap-1 mb-4 sm:mb-6">
-                            {grid.map((row, rowIndex) =>
+                            <ReelsRenderer grid={grid} />
+                            {/* {grid.map((row, rowIndex) =>
                                 row.map((cell, colIndex) => (
                                     <div
                                         key={`${rowIndex}-${colIndex}`}
@@ -94,7 +96,7 @@ const SlotGame = () => {
                                         />
                                     </div>
                                 ))
-                            )}
+                            )} */}
                         </div>
                         <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
                             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 items-center w-full sm:w-auto">
